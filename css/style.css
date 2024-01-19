@@ -110,53 +110,179 @@ header h1 {
   width:15vw;
   position:fixed;
   z-index:0;
-  opacity:50%;
+  opacity:25%;
+  top:-100vw;
+}
+.aj{
+  animation-delay:2.5s;
 }
 .image:nth-child(1){
   left:5vw;
   animation: imageanimation1 5s infinite linear;
-}
-.image:nth-child(4){
-  left:20vw;
-  animation: imageanimation4 5s infinite linear;
-}
-.image:nth-child(6){
-  left:35vw;
-  animation: imageanimation6 5s infinite linear;
+  animation-delay:2.5s;
 }
 .image:nth-child(2){
-  left:50vw;
+  left:35vw;
   animation: imageanimation2 5s infinite linear;
-}
-.image:nth-child(5){
-  left:65vw;
-  animation: imageanimation5 5s infinite linear;
+  animation-delay:2.5s;
 }
 .image:nth-child(3){
-  left:80vw;
+  left:73vw;
   animation: imageanimation3 5s infinite linear;
+  animation-delay:2.5s;
+}
+.image:nth-child(4){
+  left:15vw;
+  animation: imageanimation4 5s infinite linear;
+  animation-delay:2.5s;
+}
+.image:nth-child(5){
+  left:36vw;
+  animation: imageanimation5 5s infinite linear;
+  animation-delay:2.5s;
+}
+.image:nth-child(6){
+  left:31vw;
+  animation: imageanimation6 5s infinite linear;
+  animation-delay:2.5s;
+}
+.image:nth-child(7){
+  left:69vw;
+  animation: imageanimation7 5s infinite linear;
+  animation-delay:2.5s;
+}
+.image:nth-child(8){
+  left:57vw;
+  animation: imageanimation8 5s infinite linear;
+  animation-delay:2.5s;
+}
+.image:nth-child(9){
+  left:75vw;
+  animation: imageanimation9 5s infinite linear;
+  animation-delay:2.5s;
+}
+.image:nth-child(10){
+  left:49vw;
+  animation: imageanimation10 5s infinite linear;
+  animation-delay:2.5s;
+}
+.image:nth-child(11){
+  left:43vw;
+  animation: imageanimation11 5s infinite linear;
+}
+.image:nth-child(12){
+  left:-5vw;
+  animation: imageanimation12 5s infinite linear;
+}
+.image:nth-child(13){
+  left:77vw;
+  animation: imageanimation13 5s infinite linear;
+}
+.image:nth-child(14){
+  left:7vw;
+  animation: imageanimation14 5s infinite linear;
+}
+.image:nth-child(15){
+  left:52vw;
+  animation: imageanimation15 5s infinite linear;
+}
+.image:nth-child(16){
+  left:72vw;
+  animation: imageanimation16 5s infinite linear;
+}
+.image:nth-child(17){
+  left:10vw;
+  animation: imageanimation17 5s infinite linear;
+}
+.image:nth-child(18){
+  left:34vw;
+  animation: imageanimation18 5s infinite linear;
+}
+.image:nth-child(19){
+  left:27vw;
+  animation: imageanimation19 5s infinite linear;
+}
+.image:nth-child(20){
+  left:76vw;
+  animation: imageanimation20 5s infinite linear;
 }
 @keyframes imageanimation1{
-  0%{top:100vh;}
-  100%{top:-260vh;}
+  0%{top:130vh;}
+  100%{top:-70vh;}
 }
 @keyframes imageanimation2{
-  0%{top:130vh;}
-  100%{top:-220vh;}
+  0%{top:105vh;}
+  100%{top:-95vh;}
 }
 @keyframes imageanimation3{
-  0%{top:160vh;}
-  100%{top:-180vh;}
+  0%{top:175vh;}
+  100%{top:-25vh;}
 }
 @keyframes imageanimation4{
-  0%{top:190vh;}
-  100%{top:-140vh;}
+  0%{top:153vh;}
+  100%{top:-47vh;}
 }
 @keyframes imageanimation5{
-  0%{top:220vh;}
-  100%{top:-100vh;}
+  0%{top:142vh;}
+  100%{top:-58vh;}
 }
 @keyframes imageanimation6{
-  0%{top:250vh;}
+  0%{top:180vh;}
+  100%{top:-20vh;}
+}
+@keyframes imageanimation7{
+  0%{top:141vh;}
+  100%{top:-59vh;}
+}
+@keyframes imageanimation8{
+  0%{top:184vh;}
+  100%{top:-16vh;}
+}
+@keyframes imageanimation9{
+  0%{top:117vh;}
+  100%{top:-83vh;}
+}
+@keyframes imageanimation10{
+  0%{top:159vh;}
+  100%{top:-41vh;}
+}
+@keyframes imageanimation11{
+  0%{top:110vh;}
+  100%{top:-90vh;}
+}
+@keyframes imageanimation12{
+  0%{top:140vh;}
   100%{top:-60vh;}
+}
+@keyframes imageanimation13{
+  0%{top:107vh;}
+  100%{top:-93vh;}
+}
+@keyframes imageanimation14{
+  0%{top:175vh;}
+  100%{top:-25vh;}
+}
+@keyframes imageanimation15{
+  0%{top:139vh;}
+  100%{top:-61vh;}
+}
+@keyframes imageanimation16{
+  0%{top:185vh;}
+  100%{top:-15vh;}
+}
+@keyframes imageanimation17{
+  0%{top:103vh;}
+  100%{top:-97vh;}
+}
+@keyframes imageanimation18{
+  0%{top:185vh;}
+  100%{top:-17vh;}
+}
+@keyframes imageanimation19{
+  0%{top:147vh;}
+  100%{top:-53vh;}
+}
+@keyframes imageanimation20{
+  0%{top:155vh;}
+  100%{top:-45vh;}
 }
