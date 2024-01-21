@@ -6,10 +6,35 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>A simple Three.JS App</title>
+    <title>Shresth._.Sharma</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/edit.css" />
+    <link rel="stylesheet" href="css/credit.css" />
+    <link rel="shortcut icon" href="img/logo.jpg">
   </head>
   <body>
+    <script>
+      document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+      });
+      </script>
+      
+  <script>
+      document.addEventListener("keydown", function(event) {
+        if (event.ctrlKey && event.key === 'u') {
+          // alert("Ctrl+U Pressed!");
+          event.preventDefault();
+      }
+      
+      if (event.ctrlKey && event.shiftKey && event.key === 'I') {
+          // alert("Ctrl+Shift+I Pressed!");
+          event.preventDefault();
+        }
+      });
+  </script>
     <div id="vid1">
       <video id="vid" src="smoke.mp4" autoplay muted></video>
     </div>
@@ -53,10 +78,60 @@
       <img class="image" src="img/25.jpeg">
       <img class="image" src="img/28.jpeg">
     </div>
-    <main>
+    <script src="js/second.js"></script>
+    <div id="buttons" class="buttonshide1ani">
+      <div id="btd1" class="buttonsdivclass"><img class="buttonimg" id='btimg1' src="img/5.jpeg"><button class="buttonsclass" id="bt1" onclick="button1func()">About</button></div>
+      <div id="btd2" class="buttonsdivclass"><img class="buttonimg" id='btimg2' src="img/8.jpeg"><button class="buttonsclass" id="bt2" onclick="button2func()">Contact</button></div>
+      <div id="btd3" class="buttonsdivclass"><img class="buttonimg" id='btimg3' src="img/11.jpeg"><button class="buttonsclass" id="bt3" onclick="button3func()">Edits!</button></div>
+      <div id="btd4" class="buttonsdivclass"><img class="buttonimg" id='btimg4' src="img/14.jpeg"><button class="buttonsclass" id="bt4" onclick="window.open('https://shresth-sharma.github.io/', '_blank')">Credit</button></div>
+    </div>
+    <main id="container33d">
       <div id="container3D"></div>
     </main>
-
+    <div id="aboutmain" class="aboutmainshow">
+      <div id="aboutback"></div>
+      <h1 id="abouthead">About Me:-</h1>
+      <p id="aboutcontent">
+        Hey! I am Shresth Sharma. I'm 15 years old. I'm a programmer. I'm an Experienced programmer in <b>'HTML', 'JS', 'CSS' and 'PYTHON'</b> languages. I believe in hard work and quality work. I have created <b>27 websites</b> till now and made over <b>3200+ working codes</b> and am enhancing the UI of my website day by day. My experience in programming is nearly about <b>1100+ days</b>, Worked a lot in <b>Web Development.</b> Also I've participated in many exibitions and made my working prototypes. My main focus on programming is <b>Automation</b> and to make life a bit more smoother and easier. I have a nomad mindset. When it comes to discovering new programming languages I try to give my best on all my projects and spend majority of my time in making new programs. That's all it about me. <b>ThankYou and keep visiting.</b>
+      </p>
+      <div id="aboutbuttons" class="aboutbuttonshide1ani">
+        <div id="aboutbtd1" class="aboutbuttonsdivclass"><img class="aboutbuttonimg" id='aboutbtimg1' src="img/2.jpeg"><button class="aboutbuttonsclass" id="aboutbt1" onclick="aboutbutton1func()">Home</button></div>
+        <div id="aboutbtd2" class="aboutbuttonsdivclass"><img class="aboutbuttonimg" id='aboutbtimg2' src="img/17.jpeg"><button class="aboutbuttonsclass" id="aboutbt2" onclick="aboutbutton2func()">Contact</button></div>
+        <div id="aboutbtd3" class="aboutbuttonsdivclass"><img class="aboutbuttonimg" id='aboutbtimg3' src="img/20.jpeg"><button class="aboutbuttonsclass" id="aboutbt3" onclick="aboutbutton3func()">Edits!</button></div>
+        <div id="aboutbtd4" class="aboutbuttonsdivclass"><img class="aboutbuttonimg" id='aboutbtimg4' src="img/23.jpeg"><button class="aboutbuttonsclass" id="aboutbt4" onclick="window.open('https://shresth-sharma.github.io/', '_blank')">Credit</button></div>
+      </div>
+    </div>
+    <div id="contactmain" class="contactmainshow">
+      <center>
+        <h1 id="contacthead">Contact Me!</h1>
+        <div class="wrapper">
+          <ul>
+            <!-- <li class="facebook"><a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li> -->
+            <!-- <li class="twitter"><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li> -->
+            <li class="discord"><a href="https://discord.gg/2r79VGBz" target="_blank"><i class="fab fa-discord fa-2x" aria-hidden="true"></i></a></li>
+            <li class="instagram"><a href="https://instagram.com/shresth.sharma_" target="_blank"><i  class="fab fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+            <li class="google"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=createwithshresth2008@gmail.com" target="_blank"><i class="fab fa-google fa-2x" aria-hidden="true"></i></a></li>
+            <!-- <li class="whatsapp"><a href="#"><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a></li> -->
+          </ul>
+        </div>
+      </center>
+      <div id="contactbuttons" class="contactbuttonshide1ani">
+        <div id="contactbtd1" class="contactbuttonsdivclass"><img class="contactbuttonimg" id='contactbtimg1' src="img/26.jpeg"><button class="contactbuttonsclass" id="contactbt1" onclick="contactbutton1func()">Home</button></div>
+        <div id="contactbtd2" class="contactbuttonsdivclass"><img class="contactbuttonimg" id='contactbtimg2' src="img/29.jpeg"><button class="contactbuttonsclass" id="contactbt2" onclick="contactbutton2func()">About</button></div>
+        <div id="contactbtd3" class="contactbuttonsdivclass"><img class="contactbuttonimg" id='contactbtimg3' src="img/4.jpeg"><button class="contactbuttonsclass" id="contactbt3" onclick="contactbutton3func()">Edits!</button></div>
+        <div id="contactbtd4" class="contactbuttonsdivclass"><img class="contactbuttonimg" id='contactbtimg4' src="img/7.jpeg"><button class="contactbuttonsclass" id="contactbt4" onclick="window.open('https://shresth-sharma.github.io/', '_blank')">Credit</button></div>
+      </div>
+    </div>
+    <div id="editmain" class="editmainshow">
+      <iframe src="edit.html" id="editembed"></iframe>
+      <div id="editbuttons" class="editbuttonshide1ani">
+        <div id="editbtd1" class="editbuttonsdivclass"><img class="editbuttonimg" id='editbtimg1' src="img/10.jpeg"><button class="editbuttonsclass" id="editbt1" onclick="editbutton1func()">Home</button></div>
+        <div id="editbtd2" class="editbuttonsdivclass"><img class="editbuttonimg" id='editbtimg2' src="img/13.jpeg"><button class="editbuttonsclass" id="editbt2" onclick="editbutton2func()">About</button></div>
+        <div id="editbtd3" class="editbuttonsdivclass"><img class="editbuttonimg" id='editbtimg3' src="img/16.jpeg"><button class="editbuttonsclass" id="editbt3" onclick="editbutton3func()">Contact</button></div>
+        <div id="editbtd4" class="editbuttonsdivclass"><img class="editbuttonimg" id='editbtimg4' src="img/19.jpeg"><button class="editbuttonsclass" id="editbt4" onclick="window.open('https://shresth-sharma.github.io/', '_blank')">Credit</button></div>
+      </div>
+    </div>
+    <script type="module" src="js/random.js"></script>
     <script type="module" src="js/main.js"></script>
   </body>
 </html>

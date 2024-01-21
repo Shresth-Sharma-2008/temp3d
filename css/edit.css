@@ -1,0 +1,150 @@
+#editmain{
+    position:fixed;
+    display:none;
+    top:0vw;
+}
+.editmainshow{
+    animation:editentry 2s 1 ease-out;
+}
+.editmainhide{
+    animation:edithide 1.5s 1 ease-in;
+}
+@keyframes editentry{
+    0%{top:120vh;}
+    50%{top:120vh;}
+    100%{top:0vw;}
+}
+@keyframes edithide{
+    0%{top:0vw;}
+    100%{top:120vw;}
+}
+#editembed{
+    width:100vw;
+    height:70vh;
+    border-style:none;
+}
+
+#edithead{
+    color:rgb(255,153,51);
+    font-size:4vw;
+}
+
+.editvid{
+    width:27vw;
+    max-height:15vw;
+    transition:0.25s;
+    border-style:groove;
+    border-color:rgba(124, 124, 124, 0.5);
+    background-color:rgba(124, 124, 124, 0.5);
+    backdrop-filter:blur(5px);
+}
+
+.editvidline{
+    display:flex;
+    justify-content:space-evenly;
+    margin-bottom:10vh;
+}
+
+.editvid:hover{
+    transform:scale(1.05);
+    border-color:rgba(255,153,51,0.5);
+}
+
+#editbuttons{
+    z-index:4;
+    /* display:none; */
+    position:fixed;
+    margin:0px;
+    padding:0px;
+    /* border-style:double;
+    border-color:red; */
+    left:11vw;
+    top:75vh;
+    width:80vw;
+  }
+  .editbuttonshide1ani{
+    animation:editbuttonshide1 2s 1 ease-out;
+  }
+  .editbuttonshideani{
+    animation:editbuttonshide 1s 1 ease-in;
+  }
+  @keyframes editbuttonshide{
+    0%{top:75vh;}
+    100%{top:200vw;}
+  }
+  @keyframes editbuttonshide1{
+    0%{top:120vw;}
+    50%{top:120vw;}
+    100%{top:75vh;}
+  }
+  .editbuttonsdivclass{
+    display:inline-block;
+    width:17.5vw;
+    height:10vw;
+    margin:0px;
+    padding:0px;
+    margin-left:1.25vw;
+    margin-top:0.5vw;
+    margin-bottom:0.5vw;
+    overflow:hidden;
+  }
+  .editbuttonsclass{
+    width:100%;
+    height:100%;
+    border-style:none;
+    background:none;
+    color:rgb(255, 128, 0);
+    position:relative;
+    font-size:3vw;
+    font-weight:700;
+    transition:1s;
+    background-color:rgba(206, 206, 206,0.5);
+    border-radius:7px;
+  }
+  .editbuttonimg{
+    position:absolute;
+    width:17.5vw;
+    height:10vw;
+    opacity:85%;
+    filter: saturate(0%)blur(2.5px);
+    transition:0.5s;
+    border-radius:7px;
+  }
+  #editbtd1:hover #editbtimg1{
+    filter: saturate(200%);
+    transform: scale(1.1); 
+    opacity:100%;
+  }
+  #editbtd2:hover #editbtimg2{
+    filter: saturate(100%);
+    transform: scale(1.1); 
+    opacity:100%;
+  }
+  #editbtd3:hover #editbtimg3{
+    filter: saturate(200%);
+    transform: scale(1.1); 
+    opacity:100%;
+  }
+  #editbtd4:hover #editbtimg4{
+    filter: saturate(150%);
+    transform: scale(1.1); 
+    opacity:100%;
+  }
+  
+  #editbtd1:hover #editbt1{
+    filter:blur(50px);
+    opacity:0%;
+  }
+  #editbtd2:hover #editbt2{
+    filter:blur(50px);
+    opacity:0%;
+  }
+  #editbtd3:hover #editbt3{
+    filter:blur(50px);
+    opacity:0%;
+  }
+  #editbtd4:hover #editbt4{
+    filter:blur(50px);
+    opacity:0%;
+  }
+  
