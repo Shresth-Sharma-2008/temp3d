@@ -1,0 +1,262 @@
+#contactmain{
+    display:none;
+    /* border-style:double;
+    border-color:white; */
+    color:rgb(255,153,51);
+    position:fixed;
+    left:10vw;
+    top:5vw;
+    width:80vw;
+    height:80vh;
+    margin:0px; 
+}
+.contactmainshow{
+    animation:contactentry 2s 1 ease-out;
+}
+.contactmainhide{
+    animation:contacthide 1.5s 1 ease-in;
+}
+@keyframes contactentry{
+    0%{top:120vh;}
+    50%{top:120vh;}
+    100%{top:5vw;}
+}
+@keyframes contacthide{
+    0%{top:5vw;}
+    100%{top:120vw;}
+}
+#contacthead{
+    font-size:4vw;
+    margin-top:4vw;
+    filter:blur(1px);
+}
+
+.wrapper {
+    position: absolute;
+    top:12.5vw;
+    left:13vw;
+    width: 50vw;
+  }
+  .wrapper ul {
+    list-style: none;
+  }
+  .wrapper ul li {
+    width: 10vw;
+    height: 10vw;
+    line-height: 5vw;
+    margin-left:4vw;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 5px solid #D8E2DC;
+    float: left;
+    transition: all 0.5s ease;
+  }
+  .wrapper ul li .fab {
+    color: #D8E2DC;
+    margin-top: 3vw;
+    font-size:4vw;
+    transition: all 0.5s ease;
+  }
+  /* .wrapper ul li:hover.facebook {
+    border: 5px solid #3b5998;
+    box-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+  }
+  
+  .wrapper ul li:hover .fa-facebook {
+    color: #3b5998;
+    text-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+  } */
+  
+  /*twitter*/
+  /* .wrapper ul li:hover.twitter {
+    border: 5px solid #00aced;
+    box-shadow: 0 0 15px #00aced;
+    transition: all 0.5s ease;
+  }
+  
+  .wrapper ul li:hover .fa-twitter {
+    color: #00aced;
+    text-shadow: 0 0 15px #00aced;
+    transition: all 0.5s ease;
+} */
+    .wrapper ul li:hover.discord {
+      border: 5px solid #3b5998;
+      box-shadow: 0 0 15px #3b5998;
+      transition: all 0.5s ease;
+    }
+    
+    .wrapper ul li:hover .fa-discord {
+      color: #3b5998;
+      text-shadow: 0 0 15px #3b5998;
+      transition: all 0.5s ease;
+    }
+  
+    /* instagram */
+  .wrapper ul li:hover.instagram {
+    border: 5px solid #bc2a8d;
+    box-shadow: 0 0 15px #bc2a8d;
+    transition: all 0.5s ease;
+  }
+  
+  .wrapper ul li:hover .fa-instagram {
+    color: #bc2a8d;
+    text-shadow: 0 0 15px #bc2a8d;
+    transition: all 0.5s ease;
+  }
+  
+  /* google */
+  .wrapper ul li:hover.google {
+    border: 5px solid #dd4b39;
+    box-shadow: 0 0 15px #dd4b39;
+    transition: all 0.5s ease;
+  }
+  
+  .wrapper ul li:hover .fa-google {
+    color: #dd4b39;
+    text-shadow: 0 0 15px #dd4b39;
+    transition: all 0.5s ease;
+  }
+  
+  /* whatsapp */
+  /* .wrapper ul li:hover.whatsapp {
+    border: 5px solid #4dc247;
+    box-shadow: 0 0 15px #4dc247;
+    transition: all 0.5s ease;
+  }
+  
+  .wrapper ul li:hover .fa-whatsapp {
+    color: #4dc247;
+    text-shadow: 0 0 15px #4dc247;
+    transition: all 0.5s ease;
+  } */
+  
+  
+  /* media queries */
+  
+  /* @media screen and (max-width: 640px){
+    .wrapper {
+        width: 350px;
+    }
+    .wrapper ul li{
+        margin-top: 10px;
+    }
+    .wrapper ul li.google{
+        margin-left: 60px;
+    }
+  }
+  
+  
+  @media screen and (max-width: 340px){
+    .wrapper {
+        width: 150px;
+    }
+    .wrapper ul li{
+        margin:15px;
+    }
+    .wrapper ul li.google{
+        margin-left: 15px;
+    }
+  } */
+
+
+  #contactbuttons{
+    z-index:4;
+    /* display:none; */
+    position:fixed;
+    margin:0px;
+    padding:0px;
+    /* border-style:double;
+    border-color:red; */
+    left:11vw;
+    top:35vw;
+    width:80vw;
+  }
+  .contactbuttonshide1ani{
+    animation:contactbuttonshide1 2s 1 ease-out;
+  }
+  .contactbuttonshideani{
+    animation:contactbuttonshide 1s 1 ease-in;
+  }
+  @keyframes contactbuttonshide{
+    0%{top:35vw;}
+    100%{top:200vw;}
+  }
+  @keyframes contactbuttonshide1{
+    0%{top:120vw;}
+    50%{top:120vw;}
+    100%{top:35vw;}
+  }
+  .contactbuttonsdivclass{
+    display:inline-block;
+    width:17.5vw;
+    height:10vw;
+    margin:0px;
+    padding:0px;
+    margin-left:1.25vw;
+    margin-top:0.5vw;
+    margin-bottom:0.5vw;
+    overflow:hidden;
+  }
+  .contactbuttonsclass{
+    width:100%;
+    height:100%;
+    border-style:none;
+    background:none;
+    color:rgb(255, 128, 0);
+    position:relative;
+    font-size:3vw;
+    font-weight:700;
+    transition:1s;
+    background-color:rgba(206, 206, 206,0.5);
+    border-radius:7px;
+  }
+  .contactbuttonimg{
+    position:absolute;
+    width:17.5vw;
+    height:10vw;
+    opacity:85%;
+    filter: saturate(0%)blur(2.5px);
+    transition:0.5s;
+    border-radius:7px;
+  }
+  #contactbtd1:hover #contactbtimg1{
+    filter: saturate(200%);
+    transform: scale(1.1); 
+    opacity:100%;
+  }
+  #contactbtd2:hover #contactbtimg2{
+    filter: saturate(100%);
+    transform: scale(1.1); 
+    opacity:100%;
+  }
+  #contactbtd3:hover #contactbtimg3{
+    filter: saturate(200%);
+    transform: scale(1.1); 
+    opacity:100%;
+  }
+  #contactbtd4:hover #contactbtimg4{
+    filter: saturate(150%);
+    transform: scale(1.1); 
+    opacity:100%;
+  }
+  
+  #contactbtd1:hover #contactbt1{
+    filter:blur(50px);
+    opacity:0%;
+  }
+  #contactbtd2:hover #contactbt2{
+    filter:blur(50px);
+    opacity:0%;
+  }
+  #contactbtd3:hover #contactbt3{
+    filter:blur(50px);
+    opacity:0%;
+  }
+  #contactbtd4:hover #contactbt4{
+    filter:blur(50px);
+    opacity:0%;
+  }
+  

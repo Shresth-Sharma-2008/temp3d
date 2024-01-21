@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/edit.css" />
+    <style>
+        ::-webkit-scrollbar {
+            width: 8px; /* Width of the scrollbar */
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: rgb(255,153,51, 0.8); /* Color of the thumb */
+            border-radius: 20px; /* Rounded corners of the thumb */
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: rgba(250, 250, 250, 0.5); /* Color of the track */
+        }
+    </style>
+<body style="background:none;">
+    <center>
+        <h1 id="edithead">Edits!</h1>
+    </center>
+    <div id="editline1" class="editvidline">
+        <video muted id="editline11" class="editvid" onmouseover="document.getElementById('editline11').play();" onmouseout="document.getElementById('editline11').pause()" onclick="editvid11()"><source src="vid/11.mp4"></video>
+        <video muted id="editline12" class="editvid" onmouseover="document.getElementById('editline12').play();" onmouseout="document.getElementById('editline12').pause()" onclick="editvid12()"><source src="vid/12.mp4"></video>
+        <video muted id="editline13" class="editvid" onmouseover="document.getElementById('editline13').play();" onmouseout="document.getElementById('editline13').pause()" onclick="editvid13()"><source src="vid/13.mp4"></video>
+    </div>
+    <div id="editline2" class="editvidline">
+        <video muted id="editline21" class="editvid" onmouseover="document.getElementById('editline21').play();" onmouseout="document.getElementById('editline21').pause()" onclick="editvid21()"><source src="vid/21.mp4"></video>
+        <video muted id="editline22" class="editvid" onmouseover="document.getElementById('editline22').play();" onmouseout="document.getElementById('editline22').pause()" onclick="editvid22()"><source src="vid/22.mp4"></video>
+        <video muted id="editline23" class="editvid" onmouseover="document.getElementById('editline23').play();" onmouseout="document.getElementById('editline23').pause()" onclick="editvid23()"><source src="vid/23.mp4"></video>
+    </div>
+    <!-- <script>
+        // Use JavaScript to handle scrolling
+        document.addEventListener('wheel', function(e) {
+          // Adjust the value as needed for scrolling speed
+          window.scrollBy(0, e.deltaY);
+        });
+      </script> -->
+    <script src="js/edit.js"></script>
+</body>
+</html>

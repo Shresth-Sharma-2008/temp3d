@@ -47,7 +47,7 @@ loader.load(
 //Instantiate a new renderer and set its size
 const renderer = new THREE.WebGLRenderer({ alpha: true },{ antialias: false }); //Alpha: true allows for the transparent background
 renderer.setSize(window.innerWidth, window.innerHeight);
-
+renderer.domElement.id = 'myCanvas';
 //Add the renderer to the DOM
 document.getElementById("container3D").appendChild(renderer.domElement);
 renderer.setClearColor(0x000000, 0);
@@ -97,6 +97,7 @@ var g = 0;
 var mouseXp = 0;
 var mouseYp = 0;
 var h = 1;
+var j = 1;
 var namex = 0;
 var namey = 0;
 function animate() {
@@ -134,6 +135,10 @@ function animate() {
     d += 0.05;
   }else if(g < 0.02 && h == 1){
     g += 0.0005;
+  }
+  else if(j ==1){
+    j=0;
+    document.getElementById('buttons').style.display = 'block';
   }
   else{
     h=0
